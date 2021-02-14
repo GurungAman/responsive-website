@@ -3,57 +3,246 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
-    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
     
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    
     <link rel="stylesheet" href="../sass/style.css">
     <title>metric</title>
+
+
 </head>
 <body>
+    <div id="primary-navbar" class="container-fluid">
 
-    <!-- Navigation Bar -->
-    <nav id="primary-navbar" class='navbar navbar-expand-md'>
-        <div class="container">
+        <nav class="container navbar navbar-expand-lg navbar-light">
+
             <a class='navbar-brand'>
                 <img src='../images/page1/logo_dark.png'>
             </a>
-            <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav"
+                aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class='collapse navbar-collapse' id='navbarSupportedContent'>
-                <ul class='navbar-nav ml-auto'>
-                    
-                    <!-- add menu -->
-                    <li class='nav-item dropdown'>
-                        <a class="nav-link dropdown-toggle" href="#" id='navbarDropdown' role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Features
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
+            <div class="collapse navbar-collapse" id="main_nav">
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link fas fa-times close-btn"></a>
                     </li>
-    
-                    <!-- add menu -->
-                    <li class='nav-item'>
-                        <a class="nav-link" href="#">Integrations</a>
+
+                    <!-- Features megamenu -->
+                    <li class="nav-item dropdown has-megamenu">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Features </a>
+                        <div class="dropdown-menu megamenu" role="menu">
+                            <div class="row pl-4">
+                                <h2>Features</h2>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="col-megamenu">
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <a href="#">
+                                                    <img src="../images/page1/features/budgeting.svg" alt="">
+                                                    <span class="content">Budgeting</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><img src="../images/page1/features/costing.svg" alt="">
+                                                <span class="content">Costing</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="../images/page1/features/billing1.svg" alt="">
+                                                    <span class="content">Billing</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="../images/page1/features/revnue.svg" alt="">
+                                                    <span class="content">Revenue Recognition</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="../images/page1/features/expenses.svg" alt="">
+                                                    <span class="content">Expenses</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="../images/page1/features/capacity.svg" alt="">
+                                                    <span class="content">Capacity Planning</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div> <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                                <div class="col-lg-4">
+                                    <div class="col-megamenu">
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <a href="#">
+                                                    <img src="../images/page1/features/resource.svg" alt="">
+                                                    <span class="content">Resource Management</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="../images/page1/features/time-off.svg" alt="">
+                                                    <span class="content">Time Off Management</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="../images/page1/features/metrics.svg" alt="">
+                                                    <span class="content">Metrics</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="../images/page1/features/tags.svg" alt="">
+                                                    <span class="content">Tags</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="../images/page1/features/reporting.svg" alt="">
+                                                    <span class="content">Reporting</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="../images/page1/features/targets.svg" alt="">
+                                                    <span class="content">Targets</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div> <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                                <div class="col-lg-4">
+                                    <div class="col-megamenu">
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <a href="#">
+                                                    <img src="../images/page1/features/forecasting.svg" alt="">
+                                                    <span class="content">Forecasting</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="../images/page1/features/audit.svg" alt="">
+                                                    <span class="content">Audit</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="../images/page1/features/snapshots.svg" alt="">
+                                                    <span class="content">Snapshots</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="../images/page1/features/financial.svg" alt="">
+                                                    <span class="content">Financial Close</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="../images/page1/features/erp.svg" alt="">
+                                                    <span class="content">ERP</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div> 
+                    </li>
+
+                    <li class="nav-item dropdown has-megamenu">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Integrations</a>
+                        <div class="dropdown-menu megamenu integrations-megamenu" role="menu">
+                            <div class="row pl-4">
+                                <h2>Integrations</h2>
+                            </div>
+                            <div class="row">
+                                
+                                <div class="col-lg-6">
+                                    <div class="col-megamenu">
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <a href="#">
+                                                    <img src="../images/page1/Integrations/all.svg" alt="">
+                                                    <span class="content">All Integrations</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <img src="../images/page1/Integrations/sales.svg" alt="">
+                                        <span class="content">Sales and CRM</span>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="../images/page1/Integrations/project.svg" alt="">
+                                                    <span class="content">Project Managemnt</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="../images/page1/Integrations/time.svg" alt="">
+                                                    <span class="content">Time Tracking</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div> <!-- col-megamenu.// -->
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="col-megamenu">
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <a href="#">
+                                                    <img src="../images/page1/Integrations/accounting.svg" alt="">
+                                                    <span class="content">Accounting</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="../images/page1/Integrations/custom.svg" alt="">
+                                                    <span class="content">Custom</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div> <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                            </div><!-- end row -->
+                        </div> <!-- dropdown-mega-menu.// -->
                     </li>
                     <li class='nav-item'>
                         <a class="nav-link" href="#">Support</a>
                     </li>
+
                     <li class='nav-item'>
                         <a class="nav-link log-in-button" href="#">Log In</a>
                     </li>
+
                     <li class='nav-item'>
                         <a class="nav-link demo-button" href="#">Schedule a Demo</a>
                     </li>
+                    
                 </ul>
-            </div>
-        </div>
-    </nav>
+
+            </div> <!-- navbar-collapse.// -->
+
+        </nav>
+
+    </div>
+
 
     <section id="intro">
         <!-- Header Panel -->
@@ -69,9 +258,10 @@
                     </div>
 
                     <div class='button-wrapper'>
-                        <button class='button'>
+                        <a class='demo-button'>
                             Get a free demo
-                        </button>    
+                        </a>    
+
                     </div>
 
                 </div>
@@ -85,31 +275,490 @@
 
     <section id='intro-footer'>
         <div class="container">
-            <div class='header-content'>
+            <h1 class='header-content'>
                 Trusted by leading agencies
-            </div>
-            <div class='row d-flex align-items-center'>
-                <div class='col'>
+            </h1>
+            <div class='row align-items-center'>
+                <div class='col-sm-6 col-md-3'>
                     <img src='../images/page1/ffw.svg'>
                 </div>
-                <div class='col'>
+                <div class='col-sm-6 col-md-3'>
                     <img src='../images/page1/8th.svg'>
                 </div>
-                <div class='col'>
+                <div class='col-sm-6 col-md-3'>
                     <img src='../images/page1/bilue.svg'>
                 </div>
-                <div class='col'>
+                <div class='col-sm-6 col-md-3'>
                     <img src='../images/page1/Tahzoo.svg'>
                 </div>
             </div>
         </div>
     </section>
 
-    
+    <section id="page2">
+        <div class='container'>
+            <div class='mb-5'>
+                <h1>Keep financials in one place</h1>
+                <div class='content col-md-6 mx-auto'>
+                    Create single source of truth for your financial data. Escape spreadsheet hell. Make finance a team habit.
+                </div>
+            </div>
+              
+
+            <div class='main-content'>
+                <img class ='main-content-background' src="../images/page2/bg_keep_financials.png" alt="">
+                <!-- row1 -->
+                <div class='row mt-3'>
+                    <div class='col-md-5 my-2'>
+                        <h2>Budgeting and costing</h2>
+
+                        <div class="content my-3">
+                            Set project budgets, calculate costs, recognize revenue.
+                        </div>
+                    
+                        <a class='see-more' style="color: #4B73FF;" href="#">See more  <i class="fas fa-chevron-right"></i> 
+                        </a>
+                    </div>
+
+                    <div class='col-md-6 text-center offset-md-1 my-2'>
+                        <div class='bg-1'></div>
+                        <img class="img-fluid image-1" src='../images/page2/Budgeting and costing.png'>
+                    </div>
+                </div>
+
+                <!-- row2 -->
+                <div class='row mt-3'>
+                    <div class='col-md-5 my-2'>
+                        <h2>Realtime metrics</h2>
+
+                        <div class="content my-3">
+                            Profit, 
+                            Utilization, Effective Bill Rates, Capacity and more. Create 
+                            metrics
+                                 in 
+                                addition to over 100 service specific KPIs.
+                        </div>
+                    
+                        <a class='see-more' style="color: #FF8600;" href="#">See more  <i class="fas fa-chevron-right"></i></a>
+                    </div>
+
+                    <div class='col-md-6 text-center offset-md-1 my-2'>
+                        <div class="bg-2"></div>
+                        <img class="img-fluid"  src='../images/page2/Realtime metrics.png'>
+                    </div>
+                </div>
+
+                <!-- row3 -->
+                <div class='row mt-3'>
+                    <div class='col-md-5 my-3'>
+                        <h2>Tags</h2>
+
+                        <div class="content my-3">
+                            Categorize projects and employees into departments, roles, offices and other groups. Reflect  organization structure and measure metrics for each tag.
+                        </div>
+                    
+                        <a class='see-more' style="color: #8957FF;" href="#">See more  <i class="fas fa-chevron-right"></i></a>
+                    </div>
+
+                    <div class='col-md-6 text-center offset-md-1'>
+                        <div class="bg-3"></div>
+                        <img class="img-fluid image-3"  src='../images/page2/Tags.png'>
+                    </div>
+                </div>
+
+                <!-- row4 -->
+                <div class='row mt-3'>
+                    <div class='col-md-5 column-4'>
+                        <h2>Built for growth</h2>
+
+                        <div class="content my-3">
+                            Revenue Recognition, Multi-currency, Financial Closures, Historical Changes.
+                        </div>
+                    
+                        <a class='see-more' style="color: #34AEFF" href="#">See more  <i class="fas fa-chevron-right"></i></a>
+                    </div>
+
+                    <div class='col-md-6 text-center offset-md-1 text-center'>
+                        <div class="bg-4"></div>
+                        <img class="img-fluid image-4"  src='../images/page2/Built for growth.png'>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+
+        <div>
+            <img id='page-3-background-top' class='img-fluid' src='../images/page3/top-bg.svg'>
+        </div>
+
+    </section>
+
+    <section id="page3">
+        <div class="container">
+            <div class="pb-2">
+                <h1>Foresee the unknown</h1>
+                <div class="content col-md-6 mx-auto">
+                    Get notified of potential risks. Discover the reason actuals deviate from forecasts. Bring predictability into your planning process. 
+                </div>
+            </div>
+
+            <div class='main-content pt-5'>
+                <img class='main-content-background' src='../images/page3/bg_foresee.png'>
+                <!-- row1 -->
+                <div class='row flex-row-reverse'>
+                    <div class='col-md-5 offset-md-1'>
+                        <h2>Intelligent forecasting</h2>
+
+                        <div class="content py-4 py-md-2">
+                            Plan revenue, costs and profit based on project and resource plans. Account for changes in realtime.
+                        </div>
+                    
+                        <a class='see-more' style="color: #4B73FF" href="#">See more  <i class="fas fa-chevron-right"></i> 
+                        </a>
+                    </div>
+
+                    <div class='col-md-6 text-center my-2'>
+                        <div class="bg-1"></div>
+                        <img class="img-fluid image-1" src='../images/page3/Intelligent forecasting.png'>
+                    </div>
+                </div>
+
+                <!-- row2 -->
+                <div class='row flex-row-reverse'>
+                    <div class='col-md-5 my-2 offset-md-1'>
+                        <h2>Audit log</h2>
+
+                        <div class="content py-4 py-md-2">
+                            Trace why forecasts change down to specific allocation, time entry, or updated bill rate. 
+                        </div>
+                    
+                        <a class='see-more' style="color: #FF8600;" href="#">See more  <i class="fas fa-chevron-right"></i></a>
+                    </div>
+
+                    <div class='col-md-6 text-center my-2'>
+                        <div class="bg-2"></div>
+                        <img class="img-fluid"  src='../images/page3/Audit log.png'>
+                    </div>
+                </div>
+
+                <!-- row3 -->
+                <div class='row flex-row-reverse'>
+                    <div class='col-md-5 my-2 offset-md-1'>
+                        <h2>Targets</h2>
+
+                        <div class="content py-4 py-md-2">
+                            Set KPIs for any metric and group. Share with the team. View realtime progress and likelihood of achieving your goals.
+                        </div>
+                    
+                        <a class='see-more' style="color: #8957FF;" href="#">See more  <i class="fas fa-chevron-right"></i></a>
+                    </div>
+
+                    <div class='col-md-6 text-center my-2'>
+                        <div class="bg-3"></div>
+                        <img class="img-fluid"  src='../images/page3/Targets.png'>
+                    </div>
+                </div>
+
+                <!-- row4 -->
+                <div class='row flex-row-reverse'>
+                    <div class='col-md-5 offset-md-1 column-4'>
+                        <h2>Historical snapshots</h2>
+
+                        <div class="content py-4 py-md-2">
+                            See how forecasts were changing overtime. Predict what's not yet forecasted based on past performance.
+                        </div>
+                    
+                        <a class='see-more' style="color: #34AEFF" href="#">See more  <i class="fas fa-chevron-right"></i></a>
+                    </div>
+
+                    <div class='col-md-6 text-center my-2'>
+                        <div class="bg-4"></div>
+                        <img class="img-fluid image-4"  src='../images/page3/Historical snapshots.svg'>
+                        <img class="img-fluid bg-mbl-4" src='../images/page3/bg-4.svg'>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <section id='page4'>
+        <div class='container'>
         
+            <h1>Integrate your tools</h1>
+
+            <div class='content col-8 mx-auto'>
+                Build on top of your existing infrastructure. Leverage your data and processes. Bring your sales, project management, accounting and hiring together using our unique integration engine.
+            </div>
+
+            <div>
+                <a class='demo-button'>See all integrations</a>
+            </div>
+        </div>
+
+        <div class='logos d-flex justify-content-center align-items-center'>
+            <img src="../images/page4/logo1.png" alt="">
+            <img src="../images/page4/logo2.png" alt="">
+            <img src="../images/page4/logo3.png" alt="">
+            <img src="../images/page4/logo4.png" alt="">
+            <img src="../images/page4/logo5.png" alt="">
+            <img src="../images/page4/logo6.png" alt="">
+        </div>
+    </section>
+        
+    <section id="page5">
+        <div class="container">
+            <div class="row1">
+                <h1 class='pricing'>Pricing</h1>
+            </div>
+
+            <div id='card-wrapper'>
+
+                <div class='card card1-background'>
+                    <h2 class='card-title py-4'>BASIC</h2>
+                    <div>
+                        <div class="rate py-3">
+                            $499<small>/mo</small>
+                        </div>
+                        
+                    </div>
+
+
+                    <div class='list pt-3'>
+                        <ul class="fa-ul">
+                            <li><i class="fa-li fas fa-check"></i>Time Tracking</i></li>
+                            <li><i class="fa-li fas fa-check"></i>Resource Allocation</li>
+                            <li><i class="fa-li fas fa-check"></i>Project Budgeting</li>
+                            <li><i class="fa-li fas fa-check"></i>Expenses</li>
+                            <li><i class="fa-li fas fa-check"></i>Invoicing</li>
+                            <li><i class="fa-li fas fa-check"></i>Historical rates</li>
+                            <li><i class="fa-li fas fa-check"></i>Multi-currency</li>
+                        </ul>
+                    </div>
+
+                    <div class='demo-button-wrapper'>
+                        <a class='demo-button'> Schedule a Demo</a>                       
+                    </div>
+                </div>
+
+                <div class='card card2-background'>
+                    <h2 class='card-title py-4'>Professional</h2>
+                    <div>
+                        <div class="rate py-3">
+                            $899<small>/mo</small>
+                        </div>
+                        
+                    </div>
+
+
+                    <div class="list pt-3">
+                        <ul class="fa-ul">
+                            <li><i class="fa-li fas fa-check"></i>Time Tracking</li>
+                            <li><i class="fa-li fas fa-check"></i>Resource Allocation</li>
+                            <li><i class="fa-li fas fa-check"></i>Project Budgeting</li>
+                            <li><i class="fa-li fas fa-check"></i>Expenses</li>
+                            <li><i class="fa-li fas fa-check"></i>Invoicing</li>
+                            <li><i class="fa-li fas fa-check"></i>Historical rates</li>
+                            <li><i class="fa-li fas fa-check"></i>Multi-currency</li>
+                            <li><i class="fa-li fas fa-check"></i>Groups</li>
+                            <li><i class="fa-li fas fa-check"></i>Permissions</li>
+                            <li><i class="fa-li fas fa-check"></i>Analytics</li>
+                            <li><i class="fa-li fas fa-check"></i>Forecasting</li>
+                        </ul>
+                    </div>
+
+                    <div class='demo-button-wrapper'>
+                        <a class='demo-button'> Schedule a Demo</a>                       
+                    </div>
+                </div>
+
+                <div class='card card3-background'>
+                    <h2 class='card-title py-4'>Enterprise</h2>
+                    <div class='py-3'>
+                        <div class="contact">
+                            Contact us
+                        </div>
+                        <div class='pricing text-center'>
+                            for pricing
+                        </div>
+                        
+                    </div>
+
+                    <div class="py-sm-3">
+                        <p>For organ
+                            izations that require additional support and 
+                            zations
+                                .</p
+                                >
+                    </div>
+
+                    <div class='demo-button-wrapper'>
+                        <a class='demo-button'> Schedule a Demo</a>                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="page6">
+        <div class="container">
+            <div class="row justify-content-center">
+                <h1>Let’s start with a conversation</h1>
+            </div>
+
+            <div class="row justify-content-center text-center my-3">
+                <div class="content">
+                    Schedule a demo and get a free consultation on your agency metrics.
+                </div>
+            </div>
+
+            <div class="row justify-content-center mt-5 ">
+                <form class="col-sm-12 col-md-10 col-lg-6">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="name" placeholder="Your full name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="email" placeholder="Your work email">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="phone" placeholder="Phone">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="company-name" placeholder="Company name">
+                    </div>
+                    <select class='form-control'>
+                        <option>Company size</option>
+                        <option>Option 1</option>
+                        <option>Option 2</option>
+                    </select>
+                    <div class="content pt-4">
+                        By filling in the form, you agree to our <u><a class="content" href="#">Privacy Policy</u></a>, including our cookie use.
+                    </div>
+                    <div class='text-center'>
+                        <button class='demo-button'>Submit</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="main-content">
+                <div class="col-sm-12 col-md-3 py-5 py-md-0">
+                    <img src="../images/footer/logo_footer.svg" alt="Footer Logo">
+                </div>
+
+                <div class="col-sm-6 col-md-3">
+                    <div class="title">Features</div>
+                    <ul>
+                        <li><a href="#">Budgeting</a></li>
+                        <li><a href="#">Costing</a></li>
+                        <li><a href="#">Billing</a></li>
+                        <li><a href="#">Revenue Recognition</a></li>
+                        <li><a href="#">Expenses</a></li>
+                        <li><a href="#">Capacity Planning</a></li>
+                        <li><a href="#">Resource Management</a></li>
+                        <li><a href="#">Time Off Management</a></li>
+                        <li><a href="#">Metrics</a></li>
+                        <li><a href="#">Tags</a></li>
+                        <li><a href="#">Reporting</a></li>
+                        <li><a href="#">Targets</a></li>
+                        <li><a href="#">Forecasting</a></li>
+                        <li><a href="#">Audit</a></li>
+                        <li><a href="#">Snapshots</a></li>
+                        <li><a href="#">Financial Close</a></li>
+                        <li><a href="#">ERP</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 pb-4 pb-md-0">
+                            <div class="title">Integrations</div>
+                            <ul>
+                                <li><a href="#">All Integrations</a></li>
+                                <li><a href="#">Sales and CRM</a></li>
+                                <li><a href="#">Project Management</a></li>
+                                <li><a href="#">Time Tracking</a></li>
+                                <li><a href="#">Accounting</a></li>
+                                <li><a href="#">Success Stories</a></li>
+                            </ul>
+                        </div>
+                    
+                        <div class="col-sm-12 col-md-6 pb-4 pb-md-0 resources">
+                            <div class="title">Resources</div>
+                            <ul>
+                                <li><a href="#">Implementation</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Documentation</a></li>
+                                <li><a href="#">Support</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 pb-4 pb-md-0">
+                            <div class="title">Company</div>
+                            <ul>
+                                <li><a href="#">Mission</a></li>
+                                <li><a href="#">Team</a></li>
+                                <li><a href="#">Hiring</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 copy-right">© Measured Analytics, Inc</div>
+                    <div class="col-sm-12 col-md-6 text-md-right py-sm-4 py-md-0">
+                        <div class="d-inline pr-md-4 pr-sm-0">Privacy Policy</div>
+                        <div class="d-inline pl-sm-5 pl-md-0">Terms of Service</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
+    <script>
+        $(function() {
+            $(window).scroll(function() {    
+                let scroll = $(window).scrollTop();
+                let navbar = $("#primary-navbar");
+                let log_in_button = $('#primary-navbar .log-in-button');
+                let demo_button = $("#primary-navbar .demo-button");
+                let navbar_brand = $("#primary-navbar .navbar-brand img");
+            
+                if (scroll > 100) {
+                    navbar.addClass('scrolled-navbar');
+                    log_in_button.addClass('scrolled-log-in-button');
+                    demo_button.addClass('scrolled-demo-button');
+                    navbar_brand.attr('src', '../images/page1/logo_scroll.svg');
+                } else {
+                    navbar.removeClass('scrolled-navbar');
+                    log_in_button.removeClass('scrolled-log-in-button');
+                    demo_button.removeClass('scrolled-demo-button');
+                    navbar_brand.attr('src', '../images/page1/logo_dark.png');
+                }
+            });
+        });
+
+        $('#primary-navbar .close-btn').on('click', function(){
+            $('.navbar-collapse').collapse('hide');
+        });
+    </script>
+    <script>
+        
+    </script>
 </body>
 </html>
